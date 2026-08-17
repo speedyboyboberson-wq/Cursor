@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kingofgyro-eastonave.surge.sh/sitemap.xml
+Sitemap: https://brewpage.app/kingofgyro/Bvq03r7QSl/sitemap.xml
