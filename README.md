@@ -10,4 +10,6 @@ Static HTML/CSS/JS. No build step.
 - Reservation form (mailto)
 - Photos from the house gallery, the existing shop site, and restaurant listings
 
-Open `index.html` locally, or use the public URL published with this branch.
+Open `index.html` locally, or the live site:
+
+**https://brewpage.app/threecorner/8zPYlNbSYy/index.html**
