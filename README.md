@@ -4,18 +4,12 @@ Public website for **King of Gyro**, the halal gyro shop at 105 Easton Ave, New 
 
 ## Live site
 
-**https://wily-valley-440.harvis.page/**
+**https://kingofgyro-eastonave.surge.sh/**
+
+Hosted on Surge, which Google Safe Browsing does not list as unsafe (unlike the earlier `harvis.page` URL).
 
 - Phone: (732) 964-3400
 - Menu, hours, map, gallery, and delivery dropdown (DoorDash, Uber Eats, Grubhub)
-
-To republish after edits:
-
-```bash
-./scripts/deploy.sh
-```
-
-GitHub Pages (optional, after enabling Actions as the Pages source): https://speedyboyboberson-wq.github.io/Cursor/
 
 ## Local preview
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wily-valley-440.harvis.page/sitemap.xml
+Sitemap: https://kingofgyro-eastonave.surge.sh/sitemap.xml
