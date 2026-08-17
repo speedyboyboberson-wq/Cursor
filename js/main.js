@@ -6,10 +6,11 @@
   var orderWrap = document.querySelector(".order-wrap");
   var orderToggle = document.querySelector(".order-toggle");
 
-  if (navToggle && header) {
+    if (navToggle && header) {
     navToggle.addEventListener("click", function () {
       var open = header.classList.toggle("open");
       navToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      navToggle.setAttribute("aria-label", open ? "Close site navigation" : "Open site navigation");
     });
   }
 
@@ -75,9 +76,11 @@
     el.classList.toggle("closed", !open);
   });
 
-  var weekday = now.getDay();
+  var minutesNow = now.getHours() * 60 + now.getMinutes();
+  var highlightDay =
+    open && minutesNow < 11 * 60 ? sessionDay(now) : now.getDay();
   document.querySelectorAll("[data-hours-row]").forEach(function (row) {
-    if (Number(row.getAttribute("data-hours-row")) === weekday) {
+    if (Number(row.getAttribute("data-hours-row")) === highlightDay) {
       row.classList.add("today");
     }
   });
@@ -100,14 +103,17 @@
   var lightbox = document.querySelector(".lightbox");
   var lightboxImage = document.querySelector(".lightbox img");
   var lightboxClose = document.querySelector(".lightbox-close");
+  var lightboxTrigger = null;
 
   document.querySelectorAll("[data-lightbox]").forEach(function (button) {
     button.addEventListener("click", function () {
       if (!lightbox || !lightboxImage) return;
+      lightboxTrigger = button;
       lightboxImage.src = button.getAttribute("data-full") || button.querySelector("img").src;
       lightboxImage.alt = button.querySelector("img").alt || "";
       lightbox.classList.add("open");
       lightbox.setAttribute("aria-hidden", "false");
+      lightbox.setAttribute("aria-modal", "true");
       if (lightboxClose) lightboxClose.focus();
     });
   });
@@ -116,7 +122,19 @@
     if (!lightbox) return;
     lightbox.classList.remove("open");
     lightbox.setAttribute("aria-hidden", "true");
+    lightbox.setAttribute("aria-modal", "false");
+    if (lightboxTrigger) {
+      lightboxTrigger.focus();
+      lightboxTrigger = null;
+    }
   }
+
+  document.addEventListener("keydown", function (event) {
+    if (!lightbox || !lightbox.classList.contains("open")) return;
+    if (event.key !== "Tab") return;
+    event.preventDefault();
+    if (lightboxClose) lightboxClose.focus();
+  });
 
   if (lightboxClose) lightboxClose.addEventListener("click", closeLightbox);
   if (lightbox) {
@@ -142,15 +160,12 @@
         status.textContent = "Please add your name, phone number, and a short message.";
         return;
       }
-      var subject = encodeURIComponent("King of Gyro — " + (form.querySelector("#topic").value || "Question"));
-      var body = encodeURIComponent(
-        "Name: " + name.value.trim() +
-        "\nPhone: " + phone.value.trim() +
-        "\n\n" + message.value.trim()
-      );
       status.className = "form-status form-success";
-      status.textContent = "Thanks. Your email app should open so you can send this to the shop. You can also call (732) 964-3400.";
-      window.location.href = "mailto:hello@kingofgyronb.com?subject=" + subject + "&body=" + body;
+      status.textContent =
+        "Thanks, " +
+        name.value.trim() +
+        ". The counter confirms large orders by phone — call (732) 964-3400 and mention this note: " +
+        message.value.trim().slice(0, 80);
       form.reset();
     });
   }

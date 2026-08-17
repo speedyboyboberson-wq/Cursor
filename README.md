@@ -4,9 +4,12 @@ Public website for **King of Gyro**, the halal gyro shop at 105 Easton Ave, New 
 
 ## Live site
 
-- GitHub Pages: https://speedyboyboberson-wq.github.io/Cursor/
+**https://raw.githack.com/speedyboyboberson-wq/Cursor/cursor/king-of-gyro-website-2e01/index.html**
+
 - Phone: (732) 964-3400
 - Menu, hours, map, gallery, and delivery dropdown (DoorDash, Uber Eats, Grubhub)
+
+GitHub Pages (if enabled on the repo): https://speedyboyboberson-wq.github.io/Cursor/
 
 ## Local preview
 

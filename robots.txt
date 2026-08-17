@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://speedyboyboberson-wq.github.io/Cursor/sitemap.xml
+Sitemap: https://raw.githack.com/speedyboyboberson-wq/Cursor/cursor/king-of-gyro-website-2e01/sitemap.xml
