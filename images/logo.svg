@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">King of Gyro</title>
+  <circle cx="40" cy="40" r="38" fill="#1a120c" stroke="#d4a017" stroke-width="2.5"/>
+  <path d="M18 30.5l7.2-8.4 7.6 6.2 7.2-10.3 7.2 10.3 7.6-6.2 7.2 8.4v3.2H18z" fill="#d4a017"/>
+  <rect x="20" y="32.8" width="40" height="4.2" rx="1" fill="#f0c75e"/>
+  <circle cx="40" cy="50.5" r="11" fill="#c4451a"/>
+  <path d="M32 50.5c0-5 3.6-8.6 8-8.6s8 3.6 8 8.6" fill="none" stroke="#f6efe4" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="40" cy="51.2" r="2.1" fill="#f6efe4"/>
+</svg>
