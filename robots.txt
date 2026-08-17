@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brewpage.app/kingofgyro/Bvq03r7QSl/sitemap.xml

@@ -1,0 +1,33 @@
+name: Deploy GitHub Pages
+
+# GitHub Pages is not enabled on this repository, so this workflow is
+# manual-only. After Settings → Pages → Source is set to GitHub Actions,
+# run this workflow to publish https://speedyboyboberson-wq.github.io/Cursor/
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
