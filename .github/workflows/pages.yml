@@ -1,12 +1,13 @@
 name: Deploy GitHub Pages
 
+# GitHub Pages is not enabled on this repository, so this workflow is
+# manual-only. After Settings → Pages → Source is set to GitHub Actions,
+# run this workflow to publish https://speedyboyboberson-wq.github.io/Cursor/
 on:
-  push:
-    branches: [main, cursor/king-of-gyro-website-2e01]
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
