@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://raw.githack.com/speedyboyboberson-wq/Cursor/cursor/king-of-gyro-website-2e01/sitemap.xml
+Sitemap: https://wily-valley-440.harvis.page/sitemap.xml
