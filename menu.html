@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (!/\.[a-z0-9]+$/i.test(p) && p.slice(-1) !== "/") {
+        var b = document.createElement("base");
+        b.href = p + "/";
+        document.head.insertBefore(b, document.head.firstChild);
+      }
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | 3 Corner Restaurant Bar Liquor &amp; Grill</title>
+  <meta name="description" content="Dominican lunch specials, house mofongo, picadera boards, juices, and desserts at 3 Corner on Georges Road, New Brunswick.">
+  <link rel="canonical" href="menu.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/brand/logo.png" alt="3 Corner logo">
+        <span class="brand-text"><strong>3 Corner</strong><span>Restaurant · Bar · Liquor · Grill</span></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="menu.html" aria-current="page">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Hours &amp; Location</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-call" href="tel:+17325431700">Call</a>
+        <div class="order-wrap">
+          <button class="btn btn-solid" id="order-btn" aria-expanded="false" aria-haspopup="true">Order delivery</button>
+          <div class="order-menu" role="menu">
+            <a href="https://www.doordash.com/search/store/3%20Corner%20Restaurant%20New%20Brunswick/" target="_blank" rel="noopener"><strong>DoorDash</strong><span>Search 3 Corner in New Brunswick</span></a>
+            <a href="https://www.ubereats.com/store/3-corner-restaurant-liquor-bar-%26-grill/sIrM_4NDU4ikbvkIcFbKvg" target="_blank" rel="noopener"><strong>Uber Eats</strong><span>3 Corner Restaurant, Liquor, Bar &amp; Grill</span></a>
+            <a href="https://www.grubhub.com/restaurant/3-corner-restaurant--bar-2-georges-rd-new-brunswick/3100802" target="_blank" rel="noopener"><strong>Grubhub</strong><span>Menu, pickup &amp; delivery</span></a>
+          </div>
+        </div>
+        <button class="menu-toggle" aria-label="Pages" aria-expanded="false" aria-controls="primary-nav">Pages</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="--page-hero: url('../images/gallery/churrasco-trays.jpg')">
+      <div class="wrap">
+        <span class="eyebrow">Carta</span>
+        <h1>The menu</h1>
+        <p class="muted">In-house prices. Apps may run higher. Lunch plates include salad when the kitchen has it.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="menu-toolbar" role="tablist" aria-label="Menu categories">
+          <button class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="lunch">Lunch</button>
+          <button class="chip" data-filter="house">House specials</button>
+          <button class="chip" data-filter="share">Picadera</button>
+          <button class="chip" data-filter="sides">Sides &amp; sweets</button>
+          <button class="chip" data-filter="drinks">Drinks</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-item" data-category="lunch">
+            <h3>Lunch de moro y pernil</h3>
+            <span class="price">$16</span>
+            <p>Yellow rice with pigeon peas, roasted pork, and green salad.</p>
+          </article>
+          <article class="menu-item" data-category="lunch">
+            <h3>Lunch de moro y pollo guisado</h3>
+            <span class="price">$14</span>
+            <p>Stewed chicken over moro de guandule.</p>
+          </article>
+          <article class="menu-item" data-category="lunch">
+            <h3>Lunch de moro y res guisado</h3>
+            <span class="price">$16</span>
+            <p>Beef stew with yellow rice — the richer lunch plate.</p>
+          </article>
+          <article class="menu-item" data-category="lunch">
+            <h3>Lunch de moro y costilla al horno</h3>
+            <span class="price">$16</span>
+            <p>Baked pork ribs with moro.</p>
+          </article>
+          <article class="menu-item" data-category="lunch">
+            <h3>Lunch de arroz blanco y pernil</h3>
+            <span class="price">$16</span>
+            <p>White rice, beans, roasted pork. The classic bandera.</p>
+          </article>
+          <article class="menu-item" data-category="lunch">
+            <h3>Lunch de arroz blanco y pollo al horno</h3>
+            <span class="price">$14</span>
+            <p>Baked chicken with white rice and beans.</p>
+          </article>
+          <article class="menu-item" data-category="lunch">
+            <h3>Orden de moro y pernil</h3>
+            <span class="price">$28</span>
+            <p>Special order for two, plated separately.</p>
+          </article>
+          <article class="menu-item" data-category="lunch">
+            <h3>1/2 pollo al horno y moro</h3>
+            <span class="price">$20</span>
+            <p>Half baked chicken with yellow rice — small order still feeds two.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Mofongo de chicharrón y camarones</h3>
+            <span class="price">$32</span>
+            <p>Mofongo stuffed with fried pork; shrimp served on a separate plate.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Mofongo plain con camarones</h3>
+            <span class="price">$35</span>
+            <p>Plain mofongo with garlic shrimp on the side.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Salmón a la plancha</h3>
+            <span class="price">$30</span>
+            <p>Grilled salmon with peppers and onions. One side included.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Pechuga a la plancha</h3>
+            <span class="price">$28</span>
+            <p>Grilled chicken breast, peppers, onions, and a side of your choice.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Carnita</h3>
+            <span class="price">$16</span>
+            <p>Fried salted pork. No side — add tostones or maduros.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Chicharrón de pollo</h3>
+            <span class="price">$15</span>
+            <p>Bone-in fried chicken, Dominican style.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Chicharrón de cerdo</h3>
+            <span class="price">$10 / $20</span>
+            <p>Fried pork belly, half pound or a pound.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Pollo al horno</h3>
+            <span class="price">$20</span>
+            <p>A plate of baked chicken on its own.</p>
+          </article>
+          <article class="menu-item" data-category="share">
+            <h3>Picadera for one</h3>
+            <span class="price">$18</span>
+            <p>Fried chicken, carnita, smoked chop, longaniza, fried cheese, tostones.</p>
+          </article>
+          <article class="menu-item" data-category="share">
+            <h3>Picadera for 2–3</h3>
+            <span class="price">$30</span>
+            <p>The board people order when the table is staying for drinks.</p>
+          </article>
+          <article class="menu-item" data-category="share">
+            <h3>Picadera for 3–4</h3>
+            <span class="price">$45</span>
+            <p>Same mix, larger pour.</p>
+          </article>
+          <article class="menu-item" data-category="share">
+            <h3>Picadera for 4–5</h3>
+            <span class="price">$60</span>
+            <p>The party tray.</p>
+          </article>
+          <article class="menu-item" data-category="share sides">
+            <h3>Empanada de pollo or res</h3>
+            <span class="price">$3.50</span>
+            <p>Chicken or beef. Cheese also available.</p>
+          </article>
+          <article class="menu-item" data-category="sides">
+            <h3>Maduros</h3>
+            <span class="price">$3</span>
+            <p>Eight sweet fried plantains — the plate Nick was talking about, with cream.</p>
+          </article>
+          <article class="menu-item" data-category="sides">
+            <h3>Tostones</h3>
+            <span class="price">$5</span>
+            <p>Twice-fried green plantain.</p>
+          </article>
+          <article class="menu-item" data-category="sides">
+            <h3>Yuca or guineo</h3>
+            <span class="price">$3</span>
+            <p>Two pieces of cassava or green banana.</p>
+          </article>
+          <article class="menu-item" data-category="sides">
+            <h3>Ensalada de papa or coditos</h3>
+            <span class="price">$4.50</span>
+            <p>Potato salad, or macaroni salad with tuna.</p>
+          </article>
+          <article class="menu-item" data-category="sides">
+            <h3>Espaguetis en salsa roja</h3>
+            <span class="price">$5</span>
+            <p>Dominican-style spaghetti.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Sopa de pollo</h3>
+            <span class="price">$14 / $20</span>
+            <p>Chicken soup, small or large.</p>
+          </article>
+          <article class="menu-item" data-category="house">
+            <h3>Mondongo</h3>
+            <span class="price">$14 / $20</span>
+            <p>Tripe stew, small or large.</p>
+          </article>
+          <article class="menu-item" data-category="sides">
+            <h3>Flan</h3>
+            <span class="price">$7</span>
+            <p>Caramel pudding.</p>
+          </article>
+          <article class="menu-item" data-category="sides">
+            <h3>Tres leches</h3>
+            <span class="price">$7</span>
+            <p>Three-milk cake.</p>
+          </article>
+          <article class="menu-item" data-category="drinks">
+            <h3>Chinola / tamarindo / cereza</h3>
+            <span class="price">$6</span>
+            <p>Passion fruit, tamarind, or cherry juice.</p>
+          </article>
+          <article class="menu-item" data-category="drinks">
+            <h3>Chinola con avena</h3>
+            <span class="price">$7</span>
+            <p>Passion fruit with oatmeal — a Dominican breakfast in a glass.</p>
+          </article>
+          <article class="menu-item" data-category="drinks">
+            <h3>Limonada</h3>
+            <span class="price">$7</span>
+            <p>House lemonade.</p>
+          </article>
+          <article class="menu-item" data-category="drinks">
+            <h3>Bar &amp; liquor</h3>
+            <span class="price">Ask</span>
+            <p>House cocktails, a full beer case, and liquor to-go. Beer only for off-premise until close.</p>
+          </article>
+        </div>
+        <p class="notice" style="margin-top:28px">Seafood, pastelón, and additional grill plates appear on the printed house menu. Call (732) 543-1700 if you are ordering for a crowd.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3 class="script" style="font-size:42px;margin:0">3 Corner</h3>
+        <p class="muted">2 Georges Rd, New Brunswick, NJ 08901<br><a href="tel:+17325431700">(732) 543-1700</a></p>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <p class="muted">Mon 9am–2am · Tue–Thu 9am–1am<br>Fri–Sat 9am–2am · Sun 12pm–2am</p>
+      </div>
+      <div>
+        <h3>Order</h3>
+        <p><a href="https://www.grubhub.com/restaurant/3-corner-restaurant--bar-2-georges-rd-new-brunswick/3100802" target="_blank" rel="noopener">Grubhub</a><br>
+        <a href="menu.html">Dine-in menu</a></p>
+      </div>
+    </div>
+    <div class="wrap legal"><span>© <span id="year"></span> 3 Corner Restaurant Bar Liquor &amp; Grill</span><span>New Brunswick, New Jersey</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (!/\.[a-z0-9]+$/i.test(p) && p.slice(-1) !== "/") {
+        var b = document.createElement("base");
+        b.href = p + "/";
+        document.head.insertBefore(b, document.head.firstChild);
+      }
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3 Corner Restaurant Bar Liquor &amp; Grill | New Brunswick, NJ</title>
+  <meta name="description" content="An elevated Dominican house on Georges Road: restaurant, bar, liquor store, and late-night grill. Reserve a table, order delivery, or stay for the DJ.">
+  <link rel="canonical" href="https://3corner.pages.dev/">
+  <meta property="og:title" content="3 Corner Restaurant Bar Liquor &amp; Grill">
+  <meta property="og:description" content="Authentic Dominican cuisine, house cocktails, a full liquor store, and a room that turns into the night.">
+  <meta property="og:image" content="images/hero/event-salon.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Great+Vibes&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "3 Corner Restaurant Bar Liquor & Grill",
+    "image": "images/hero/event-salon.jpg",
+    "servesCuisine": ["Dominican", "Latin American"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 Georges Rd",
+      "addressLocality": "New Brunswick",
+      "addressRegion": "NJ",
+      "postalCode": "08901",
+      "addressCountry": "US"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 40.48067, "longitude": -74.44472 },
+    "telephone": "+17325431700",
+    "url": "https://3cornersrestaurant.com/",
+    "priceRange": "$$",
+    "acceptsReservations": true,
+    "hasMenu": "menu.html",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "09:00", "closes": "02:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday"], "opens": "09:00", "closes": "01:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "09:00", "closes": "02:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "02:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/brand/logo.png" alt="3 Corner logo">
+        <span class="brand-text">
+          <strong>3 Corner</strong>
+          <span>Restaurant · Bar · Liquor · Grill</span>
+        </span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Hours &amp; Location</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-call" href="tel:+17325431700">Call</a>
+        <div class="order-wrap">
+          <button class="btn btn-solid" id="order-btn" aria-expanded="false" aria-haspopup="true">Order delivery</button>
+          <div class="order-menu" role="menu">
+            <a href="https://www.doordash.com/search/store/3%20Corner%20Restaurant%20New%20Brunswick/" target="_blank" rel="noopener">
+              <strong>DoorDash</strong>
+              <span>Search 3 Corner in New Brunswick</span>
+            </a>
+            <a href="https://www.ubereats.com/store/3-corner-restaurant-liquor-bar-%26-grill/sIrM_4NDU4ikbvkIcFbKvg" target="_blank" rel="noopener">
+              <strong>Uber Eats</strong>
+              <span>3 Corner Restaurant, Liquor, Bar &amp; Grill</span>
+            </a>
+            <a href="https://www.grubhub.com/restaurant/3-corner-restaurant--bar-2-georges-rd-new-brunswick/3100802" target="_blank" rel="noopener">
+              <strong>Grubhub</strong>
+              <span>Menu, pickup &amp; delivery</span>
+            </a>
+          </div>
+        </div>
+        <button class="menu-toggle" aria-label="Pages" aria-expanded="false" aria-controls="primary-nav">Pages</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-media">
+        <img src="images/hero/event-salon.jpg" alt="The private salon at 3 Corner, set in black, white, and gold">
+      </div>
+      <div class="hero-copy">
+        <div class="status-pill" data-open-status>
+          <i></i>
+          <span data-open-label>Checking hours…</span>
+        </div>
+        <span class="eyebrow">Georges Road · New Brunswick</span>
+        <h1><span class="script">3 Corner</span>Restaurant · Bar · Liquor · Grill</h1>
+        <p>A Dominican house with four rooms in one: the buffet and the grill, the cocktail bar, the liquor counter, and a floor that stays open after midnight.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="contact.html#reserve">Reserve a table</a>
+          <a class="btn" href="menu.html">View the menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Four corners, one house</span>
+          <h2>Eat. Drink. Dance. Take the night home.</h2>
+          <div class="gold-rule center"></div>
+          <p class="muted">On Georges Road, 3 Corner is the rare New Brunswick address that is a restaurant, a bar, a liquor store, and a late grill at once — closer to Santo Domingo nightlife than to a college cafeteria.</p>
+        </div>
+        <div class="pillars">
+          <article class="pillar" style="--img: url('../images/gallery/picadera.jpg')">
+            <span class="eyebrow">01</span>
+            <h3>Restaurant</h3>
+            <p>Moro, pernil, mofongo, and the steam-table lunch that New Brunswick grew up on — plated with more ceremony than the usual corner spot.</p>
+          </article>
+          <article class="pillar" style="--img: url('../images/hero/cocktail.jpg')">
+            <span class="eyebrow">02</span>
+            <h3>Bar</h3>
+            <p>House pours, cold beer, and a counter that turns a weekday dinner into a night. TVs, music, and a room that does not empty at nine.</p>
+          </article>
+          <article class="pillar" style="--img: url('../images/hero/liquor-shelf.jpg')">
+            <span class="eyebrow">03</span>
+            <h3>Liquor</h3>
+            <p>A true package store inside the dining room. Guests come for the best price on the block — and beer to-go until close.</p>
+          </article>
+          <article class="pillar" style="--img: url('../images/hero/grill.jpg')">
+            <span class="eyebrow">04</span>
+            <h3>Grill</h3>
+            <p>Churrasco, pechuga a la plancha, salmon, and the picadera boards meant for the table, not just the takeout bag.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="wrap split">
+        <div class="frame-wrap">
+          <img class="frame" src="images/hero/churrasco.jpg" alt="T-bone steak with tostones and salad at 3 Corner">
+        </div>
+        <div>
+          <span class="eyebrow">The house</span>
+          <h2>Dominican flavor, dressed for the evening.</h2>
+          <div class="gold-rule"></div>
+          <p>3 Corner Restaurant Bar Liquor &amp; Grill sits at 2 Georges Road — a rebuilt corner that now holds a dining room, two bars, package goods, and a downstairs event salon with a gold numeral 3 on the wall.</p>
+          <p class="muted">Neighbors come for plantains with cream and the meat mix platter. Regulars stay because the DJ is already in the booth, the liquor case is stocked, and the kitchen does not close when Rutgers does. Carmen’s up the street and La Cabañita on Elizabeth feed the neighborhood by day. 3 Corner keeps the lights on after midnight.</p>
+          <p><a class="btn" href="about.html">The story</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">From the kitchen</span>
+          <h2>What the house is known for</h2>
+          <div class="gold-rule center"></div>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <img src="images/gallery/picadera.jpg" alt="Picadera mixed grill platter with tostones">
+            <div class="card-body">
+              <span class="eyebrow">To share</span>
+              <h3>Picadera</h3>
+              <p class="muted">Chicharrón de pollo, carnita, smoked chop, longaniza, fried cheese, and tostones. Built for the table.</p>
+              <p class="price">from $18</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/gallery/pernil.jpg" alt="Crispy pernil with salad">
+            <div class="card-body">
+              <span class="eyebrow">Lunch</span>
+              <h3>Pernil &amp; moro</h3>
+              <p class="muted">Roasted pork with yellow rice and pigeon peas — the lunch that still sells out on Georges Road.</p>
+              <p class="price">$16</p>
+            </div>
+          </article>
+          <article class="card">
+            <img src="images/menu/pollo-horno.jpg" alt="Roasted chicken with rice, salad, and sauce">
+            <div class="card-body">
+              <span class="eyebrow">House special</span>
+              <h3>Mofongo &amp; camarones</h3>
+              <p class="muted">Mofongo filled with chicharrón, shrimp on the side. The dish guests dress up for.</p>
+              <p class="price">$32</p>
+            </div>
+          </article>
+        </div>
+        <p style="text-align:center;margin-top:36px"><a class="btn" href="menu.html">Full menu</a></p>
+      </div>
+    </section>
+
+    <section class="section section-panel">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow">After dinner</span>
+          <h2>The night does not end with the check.</h2>
+          <div class="gold-rule"></div>
+          <p>Gilbert Cedres said it plainly: buffet, bar, liquor to-go, a seating room with a DJ, and beer you can walk out with until 1 a.m. on weeknights and 2 a.m. on weekends.</p>
+          <p class="muted">That is the 3 Corner difference versus a daytime Dominican lunch counter. Come for the bandera. Stay because the room is still moving.</p>
+          <p><a class="btn btn-solid" href="tel:+17325431700">Get a reservation</a></p>
+        </div>
+        <div class="frame-wrap">
+          <img class="frame" src="images/hero/rum-bar.jpg" alt="A low-lit bar with amber bottles and glassware">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">From the room</span>
+          <h2>Guests, in their own words</h2>
+          <div class="gold-rule center"></div>
+        </div>
+        <div class="reviews">
+          <blockquote class="review">
+            <div class="stars">★★★★★</div>
+            <p>“The flavor, amount and quality of the food was delicious. Pleasantly surprised. Muy bueno.”</p>
+            <cite>Food Whisperer</cite>
+          </blockquote>
+          <blockquote class="review">
+            <div class="stars">★★★★★</div>
+            <p>“My favorite spot for Spanish food. Been coming here since the day it opened. Staff go out of their way.”</p>
+            <cite>Hassan Bey</cite>
+          </blockquote>
+          <blockquote class="review">
+            <div class="stars">★★★★☆</div>
+            <p>“Plantains with cream are done right and the meat mix platter is so good. Definitely a Dominican spot.”</p>
+            <cite>Nick</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3 class="script" style="font-size:42px;margin:0">3 Corner</h3>
+        <p class="muted">2 Georges Rd, New Brunswick, NJ 08901<br><a href="tel:+17325431700">(732) 543-1700</a></p>
+        <p><a class="btn" href="contact.html">Hours &amp; map</a></p>
+      </div>
+      <div>
+        <h3>Visit</h3>
+        <p class="muted">Mon 9am–2am · Tue–Thu 9am–1am<br>Fri–Sat 9am–2am · Sun 12pm–2am</p>
+        <p class="muted">Beer to-go until close. Catering for all occasions.</p>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <p><a href="https://www.facebook.com/p/3-Corner-Restaurant-Bar-Liq-100082171720684/" target="_blank" rel="noopener">Facebook</a><br>
+        <a href="https://www.yelp.com/biz/3-corner-restaurant-and-bar-new-brunswick" target="_blank" rel="noopener">Yelp</a><br>
+        <a href="https://www.tripadvisor.com/Restaurant_Review-g46664-d26955964-Reviews-3_Corner_Restaurant_Bar-New_Brunswick_New_Jersey.html" target="_blank" rel="noopener">Tripadvisor</a></p>
+      </div>
+    </div>
+    <div class="wrap legal">
+      <span>© <span id="year"></span> 3 Corner Restaurant Bar Liquor &amp; Grill</span>
+      <span>New Brunswick, New Jersey</span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
