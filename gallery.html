@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (!/\.[a-z0-9]+$/i.test(p) && p.slice(-1) !== "/") {
+        var b = document.createElement("base");
+        b.href = p + "/";
+        document.head.insertBefore(b, document.head.firstChild);
+      }
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Full Time Movers</title>
+  <meta name="description" content="Real Full Time Movers job photos from HireAHelper: pianos, wrap, Relocubes, office containers, and crews in uniform.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/brand/logo.jpg" alt="Full Time Movers badge">
+        <span class="brand-text"><strong>Full Time Movers</strong><span>Jersey City · Tri-State</span></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a class="book-tab" href="book.html">Book</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-call" href="tel:+18889883885">Call</a>
+        <div class="order-wrap">
+          <button class="btn" id="order-btn" aria-expanded="false" aria-haspopup="true">Contact</button>
+          <div class="order-menu" role="menu">
+            <a href="tel:+18889883885"><strong>Call toll-free</strong><span>(888) 988-3885</span></a>
+            <a href="tel:+19089860844"><strong>Local crew line</strong><span>(908) 986-0844</span></a>
+            <a href="mailto:info@fulltimemovers.com"><strong>Email</strong><span>info@fulltimemovers.com</span></a>
+            <a href="https://www.hireahelper.com/movers/jersey-city_nj/full-time-movers/" target="_blank" rel="noopener"><strong>HireAHelper</strong><span>4.9 ★ from 452 verified jobs</span></a>
+          </div>
+        </div>
+        <a class="btn btn-solid" href="book.html">Book</a>
+        <button class="menu-toggle" aria-label="Pages" aria-expanded="false" aria-controls="primary-nav">Pages</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero" style="--page-hero: url('images/gallery/ready-crew.jpg')">
+      <div class="wrap">
+        <span class="eyebrow">Gallery</span>
+        <h1>The jobs, not stock models.</h1>
+        <p class="muted">Photos the company uploaded to HireAHelper. Click any frame for the lightbox.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="gallery-grid">
+          <a href="images/gallery/piano-stairs.jpg" data-lightbox data-caption="Crew at a house — “America’s Best, one house at a time.”">
+            <img src="images/gallery/piano-stairs.jpg" alt="Full Time Movers crew on a front stair">
+          </a>
+          <a href="images/gallery/ready-crew.jpg" data-lightbox data-caption="Uniformed crew wrapping furniture. Shirt line (908) 986-0844.">
+            <img src="images/gallery/ready-crew.jpg" alt="Movers wrapping furniture in plastic">
+          </a>
+          <a href="images/gallery/piano-wrap.jpg" data-lightbox data-caption="Piano, blankets, dolly, and wrap on a job.">
+            <img src="images/gallery/piano-wrap.jpg" alt="Wrapped piano and moving blankets">
+          </a>
+          <a href="images/gallery/crew-smiles.jpg" data-lightbox data-caption="Labor professional at a storage unit.">
+            <img src="images/gallery/crew-smiles.jpg" alt="Smiling mover at a storage unit">
+          </a>
+          <a href="images/gallery/room-ready.jpg" data-lightbox data-caption="Room staged and wrapped before the load.">
+            <img src="images/gallery/room-ready.jpg" alt="Furniture wrapped and ready in a room">
+          </a>
+          <a href="images/gallery/office-containers.jpg" data-lightbox data-caption="Office move: NYC inventory into containers.">
+            <img src="images/gallery/office-containers.jpg" alt="Office goods loaded toward containers">
+          </a>
+          <a href="images/gallery/florida-family.jpg" data-lightbox data-caption="Long-distance: Palisades Park, NJ to Wellington, FL.">
+            <img src="images/gallery/florida-family.jpg" alt="Family with movers on a long-distance job">
+          </a>
+          <a href="images/gallery/boxes-load.jpg" data-lightbox data-caption="Boxes and furniture going onto the truck.">
+            <img src="images/gallery/boxes-load.jpg" alt="Loading boxes onto a truck">
+          </a>
+          <a href="images/gallery/wrapped-room.jpg" data-lightbox data-caption="Disassembly, blankets, and wrap before the walk-out.">
+            <img src="images/gallery/wrapped-room.jpg" alt="Wrapped furniture in a prepared room">
+          </a>
+          <a href="images/gallery/customers.jpg" data-lightbox data-caption="Customers on a completed unload.">
+            <img src="images/gallery/customers.jpg" alt="Customers after an unload">
+          </a>
+          <a href="images/gallery/packing.jpg" data-lightbox data-caption="Packing with blankets and boxes.">
+            <img src="images/gallery/packing.jpg" alt="Packing and moving blankets">
+          </a>
+          <a href="images/gallery/container.jpg" data-lightbox data-caption="Container load with the crew on site.">
+            <img src="images/gallery/container.jpg" alt="Loading a moving container">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo">
+    <button class="lightbox-close" type="button" aria-label="Close">×</button>
+    <button class="lightbox-nav prev" type="button" aria-label="Previous">‹</button>
+    <img alt="">
+    <button class="lightbox-nav next" type="button" aria-label="Next">›</button>
+    <p data-caption></p>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>Full Time Movers, LLC</h3>
+        <p><a href="tel:+18889883885">(888) 988-3885</a></p>
+      </div>
+      <div>
+        <h3>Book</h3>
+        <p><a href="book.html">Open the Book tab</a></p>
+      </div>
+      <div>
+        <h3>Source</h3>
+        <p>HireAHelper gallery, 2019–2024 uploads.</p>
+      </div>
+    </div>
+    <div class="wrap legal"><span>© <span id="year">2026</span> Full Time Movers, LLC</span><span>Use arrows or Esc in the lightbox</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
