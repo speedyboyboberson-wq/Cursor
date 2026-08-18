@@ -561,8 +561,16 @@ h1, h2, h3 {
   border-radius: 999px;
 }
 .lightbox-close { top: 18px; right: 18px; }
-.lightbox-nav.prev { left: 18px; }
-.lightbox-nav.next { right: 18px; }
+.lightbox-nav.prev {
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.lightbox-nav.next {
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .lightbox [data-caption] {
   position: absolute;
   bottom: 18px;
