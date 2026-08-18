@@ -128,8 +128,9 @@
       const body = encodeURIComponent(
         `Name: ${name}\nPhone: ${phone}\nEmail: ${email || "n/a"}\nFrom: ${from}\nTo: ${to}\nDate: ${date || "flexible"}\nMove size: ${size || "n/a"}\nService: ${service || "n/a"}\nHours requested: ${hours}\nTiming: ${timing}\nEstimate (2 movers): $${Math.round(total)}\n\n${message}`
       );
-      window.location.href = `mailto:info@fulltimemovers.com?subject=${encodeURIComponent("Move booking request")}&body=${body}`;
+      const mailto = `mailto:info@fulltimemovers.com?subject=${encodeURIComponent("Move booking request")}&body=${body}`;
       if (note) note.textContent = "Opening your email to send the request. You can also call (888) 988-3885.";
+      window.location.assign(mailto);
     });
   }
 
