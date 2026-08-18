@@ -1,8 +1,14 @@
 # 3 Corner Restaurant Bar Liquor & Grill
 
-Upscale marketing site for **3 Corner** at 2 Georges Road, New Brunswick, NJ — restaurant, bar, liquor store, and late-night grill.
+Static site for **3 Corner** at 2 Georges Road, New Brunswick, NJ — restaurant, bar, liquor store, and late-night grill.
 
-Static HTML/CSS/JS. No build step.
+This GitHub repo is still named `Cursor`. Rename it to **`3-corner-restaurant`** in [repository settings](https://github.com/speedyboyboberson-wq/Cursor/settings) so later restaurant sites can each get their own named repo. This agent cannot rename it (no admin permission on the GitHub token).
+
+## Live URL
+
+**https://brewpage.app/threecorner/8zPYlNbSYy/index.html**
+
+## Site
 
 - Home, menu, about, gallery, hours & location
 - Order-delivery dropdown: DoorDash, Uber Eats, Grubhub
@@ -10,6 +16,4 @@ Static HTML/CSS/JS. No build step.
 - Reservation form (mailto)
 - Photos from the house gallery, the existing shop site, and restaurant listings
 
-Open `index.html` locally, or the live site:
-
-**https://brewpage.app/threecorner/8zPYlNbSYy/index.html**
+For the next restaurant website, read `WEBSITE-PLAYBOOK.md` first so the new site can reuse what already worked.
