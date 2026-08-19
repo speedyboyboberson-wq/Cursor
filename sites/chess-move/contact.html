@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (!/\.[a-z0-9]+$/i.test(p) && p.slice(-1) !== "/") {
+        var b = document.createElement("base");
+        b.href = p + "/";
+        document.head.insertBefore(b, document.head.firstChild);
+      }
+    })();
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hours &amp; location | Chess Move</title>
+  <meta name="description" content="179 Redmond St, New Brunswick, NJ 08901">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/brand/logo.jpg" alt="Chess Move LLC mark">
+        <span class="brand-text"><strong>Chess Move</strong><span>New Brunswick, NJ</span></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="book.html" class="book-tab">Book</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-call" href="tel:+17329123655">Call</a>
+        <div class="order-wrap">
+          <button class="btn" id="order-btn" aria-expanded="false" aria-haspopup="true">Contact</button>
+          <div class="order-menu" role="menu">
+            <a href="tel:+17329123655"><strong>Call</strong><span>(732) 912-3655</span></a><a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&amp;query_type=queryCarrierSnapshot&amp;query_param=USDOT&amp;query_string=3476184" target="_blank" rel="noopener"><strong>FMCSA SAFER</strong><span>USDOT 3476184</span></a>
+          </div>
+        </div>
+        <a class="btn btn-solid" href="book.html">Book</a>
+        <button class="menu-toggle" aria-label="Pages" aria-expanded="false" aria-controls="primary-nav">Pages</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero" id="contact" style="background-image: url('images/hero/loading.jpg')">
+      <div class="wrap">
+        <span class="eyebrow">Hours &amp; location</span>
+        <h1>New Brunswick address on USDOT.</h1>
+        <p class="muted">179 Redmond St, New Brunswick, NJ 08901</p>
+        <div class="status-pill light" data-open-status style="margin-top:18px"><i></i><span data-open-label>Checking hours…</span></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow">The door</span>
+          <h2>Call, book, or use the marketplace. No DoorDash.</h2>
+          <p><a href="tel:+17329123655">Call</a> · <a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&amp;query_type=queryCarrierSnapshot&amp;query_param=USDOT&amp;query_string=3476184">FMCSA SAFER</a></p>
+          <table class="hours-table"><tbody><tr data-day="0"><th>Sunday</th><td>Call for availability</td></tr><tr data-day="1"><th>Monday</th><td>Call for availability</td></tr><tr data-day="2"><th>Tuesday</th><td>Call for availability</td></tr><tr data-day="3"><th>Wednesday</th><td>Call for availability</td></tr><tr data-day="4"><th>Thursday</th><td>Call for availability</td></tr><tr data-day="5"><th>Friday</th><td>Call for availability</td></tr><tr data-day="6"><th>Saturday</th><td>Call for availability</td></tr></tbody></table>
+          <p class="notice">Verify USDOT 3476184 on FMCSA SAFER. One-truck listings go out of service — check before moving day.</p>
+          <p><a class="btn btn-dark" href="book.html">Book a crew</a></p>
+        </div>
+        <div class="map-embed">
+          <iframe title="Map of 179 Redmond St, New Brunswick, NJ 08901" src="https://maps.google.com/maps?q=179+Redmond+St+New+Brunswick+NJ+08901&amp;output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>Chess Move LLC</h3>
+        <p>179 Redmond St<br>New Brunswick, NJ 08901<br><a href="tel:+17329123655">(732) 912-3655</a></p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="book.html">Book</a><br><a href="about.html">About</a><br><a href="gallery.html">Gallery</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>No published hours. Call.</p>
+        
+      </div>
+    </div>
+    <div class="wrap legal"><span>© <span id="year">2026</span> Chess Move LLC</span><span>USDOT 3476184 · verify on SAFER</span></div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

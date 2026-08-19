@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (!/\.[a-z0-9]+$/i.test(p) && p.slice(-1) !== "/") {
+        var b = document.createElement("base");
+        b.href = p + "/";
+        document.head.insertBefore(b, document.head.firstChild);
+      }
+    })();
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services &amp; rates | J&amp;D Moving</title>
+  <meta name="description" content="J&amp;D Moving &amp; Delivery LLC, 313 Handy St Apt 1, New Brunswick NJ. USDOT 2556902. Call (732) 925-3495. No owned website.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/brand/logo.jpg" alt="J&amp;D Moving &amp; Delivery LLC mark">
+        <span class="brand-text"><strong>J&amp;D Moving</strong><span>New Brunswick, NJ</span></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="book.html" class="book-tab">Book</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-call" href="tel:+17329253495">Call</a>
+        <div class="order-wrap">
+          <button class="btn" id="order-btn" aria-expanded="false" aria-haspopup="true">Contact</button>
+          <div class="order-menu" role="menu">
+            <a href="tel:+17329253495"><strong>Call</strong><span>(732) 925-3495</span></a><a href="https://safer.fmcsa.dot.gov/query.asp?searchtype=ANY&amp;query_type=queryCarrierSnapshot&amp;query_param=USDOT&amp;query_string=2556902" target="_blank" rel="noopener"><strong>FMCSA SAFER</strong><span>USDOT 2556902</span></a>
+          </div>
+        </div>
+        <a class="btn btn-solid" href="book.html">Book</a>
+        <button class="menu-toggle" aria-label="Pages" aria-expanded="false" aria-controls="primary-nav">Pages</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero" style="background-image: url('images/hero/carry.jpg')">
+      <div class="wrap"><span class="eyebrow">Services</span><h1>What we will actually do.</h1><p class="muted">Everything is a quote. Filters still work so the layout matches the other sites.</p></div>
+    </section>
+    <section class="section">
+      <div class="wrap price-grid">
+        <div>
+          <span class="eyebrow">Published rate</span>
+          <h2>Call for the number.</h2>
+          <p class="muted">Publishing a fake hourly would be worse than a missing website.</p>
+          <ul class="rate-list"><li><span>Hourly</span><strong>Call</strong></li><li><span>USDOT</span><strong>2556902</strong></li><li><span>MC</span><strong>902425</strong></li><li><span>Trucks</span><strong>1 truck / 1 driver</strong></li><li><span>Reviews</span><strong>None verified</strong></li></ul>
+        </div>
+        <div class="price-card">
+          <span class="eyebrow">Prep</span>
+          <h3>Before the crew arrives</h3>
+          <p class="muted">Ask for written estimate, insurance, and whether they will issue a COI for the building.</p>
+          <p><a class="btn btn-dark" href="book.html">Estimate on the Book tab</a></p>
+        </div>
+      </div>
+    </section>
+    <section class="section section-paper">
+      <div class="wrap">
+        <div class="chips" role="toolbar" aria-label="Service filters">
+          <button class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="local" aria-pressed="false">Local</button>
+          <button class="chip" data-filter="labor" aria-pressed="false">Labor-only</button>
+          <button class="chip" data-filter="pack" aria-pressed="false">Packing</button>
+          <button class="chip" data-filter="long" aria-pressed="false">Long-distance</button>
+          <button class="chip" data-filter="office" aria-pressed="false">Office</button>
+        </div>
+        <div class="service-grid"><article class="service-item" data-category="local">
+            <h3>Local household goods</h3><span class="price">Quote</span><p>New Brunswick origin.</p>
+          </article><article class="service-item" data-category="labor local">
+            <h3>Labor with their truck</h3><span class="price">Quote</span><p>They have a power unit on file.</p>
+          </article><article class="service-item" data-category="long">
+            <h3>Interstate</h3><span class="price">Quote</span><p>Confirm MC authority is active on SAFER.</p>
+          </article><article class="service-item" data-category="pack">
+            <h3>Packing</h3><span class="price">Quote</span><p>Ask on the call.</p>
+          </article><article class="service-item" data-category="local">
+            <h3>Delivery / small load</h3><span class="price">Quote</span><p>The J&amp;D name includes delivery.</p>
+          </article><article class="service-item" data-category="office">
+            <h3>Office</h3><span class="price">Quote</span><p>One-truck capacity.</p>
+          </article><article class="service-item" data-category="pack">
+            <h3>Piano / specialty</h3><span class="price">Quote</span><p>Do not assume they have a piano crew.</p>
+          </article><article class="service-item" data-category="long">
+            <h3>Storage</h3><span class="price">Not listed</span><p>No warehouse brand on the federal file.</p>
+          </article></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>J&amp;D Moving &amp; Delivery LLC</h3>
+        <p>313 Handy St Apt 1<br>New Brunswick, NJ 08901<br><a href="tel:+17329253495">(732) 925-3495</a></p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="book.html">Book</a><br><a href="about.html">About</a><br><a href="gallery.html">Gallery</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>No published hours. Call.</p>
+        
+      </div>
+    </div>
+    <div class="wrap legal"><span>© <span id="year">2026</span> J&amp;D Moving &amp; Delivery LLC</span><span>USDOT 2556902 · verify on SAFER</span></div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

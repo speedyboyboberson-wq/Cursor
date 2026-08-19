@@ -1,0 +1,1 @@
+window.MOVER = {"rate": 70, "sameDay": 1.0, "email": "", "phone": "", "bookUrl": "https://www.uhaul.com/MovingHelp/New-Brunswick-NJ/1/Results/", "hours": {"0": [0, 1440], "1": [0, 1440], "2": [0, 1440], "3": [0, 1440], "4": [0, 1440], "5": [0, 1440], "6": [0, 1440]}, "openText": "Jobs book on U-Haul", "closedText": "Book a date on U-Haul", "quoteOnly": false};

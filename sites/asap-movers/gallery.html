@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (!/\.[a-z0-9]+$/i.test(p) && p.slice(-1) !== "/") {
+        var b = document.createElement("base");
+        b.href = p + "/";
+        document.head.insertBefore(b, document.head.firstChild);
+      }
+    })();
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Asap Movers</title>
+  <meta name="description" content="Uploads from the company profile — uniforms, POD loads, blankets.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/brand/logo.jpg" alt="Asap Movers mark">
+        <span class="brand-text"><strong>Asap Movers</strong><span>Bronx · 100-mile radius</span></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="book.html" class="book-tab">Book</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        
+        <div class="order-wrap">
+          <button class="btn" id="order-btn" aria-expanded="false" aria-haspopup="true">Contact</button>
+          <div class="order-menu" role="menu">
+            <a href="https://www.hireahelper.com/movers/bronx_ny/asap-movers-the-bronx/" target="_blank" rel="noopener"><strong>HireAHelper</strong><span>5.0 ★ from 528 verified jobs</span></a>
+          </div>
+        </div>
+        <a class="btn btn-solid" href="book.html">Book</a>
+        <button class="menu-toggle" aria-label="Pages" aria-expanded="false" aria-controls="primary-nav">Pages</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero" style="background-image: url('images/hero/carry.jpg')">
+      <div class="wrap"><span class="eyebrow">Gallery</span><h1>Their HireAHelper job photos.</h1><p class="muted">Uploads from the company profile — uniforms, POD loads, blankets.</p></div>
+    </section>
+    <section class="section">
+      <div class="wrap"><div class="gallery-grid"><a href="images/gallery/blankets.jpg" data-lightbox data-caption="Professionally packing with moving blankets."><img src="images/gallery/blankets.jpg" alt="Blankets and packing"></a><a href="images/gallery/pod.jpg" data-lightbox data-caption="Professionally dressed in uniform, packing a POD."><img src="images/gallery/pod.jpg" alt="Uniformed crew packing a POD"></a><a href="images/gallery/load.jpg" data-lightbox data-caption="Two workers loading a POD."><img src="images/gallery/load.jpg" alt="Two workers loading a POD"></a><a href="images/gallery/chairs.jpg" data-lightbox data-caption="Safely packing chairs."><img src="images/gallery/chairs.jpg" alt="Packing chairs"></a><a href="images/gallery/customer.jpg" data-lightbox data-caption="Happy customer, company upload."><img src="images/gallery/customer.jpg" alt="Customer after a job"></a><a href="images/gallery/reliable.jpg" data-lightbox data-caption="Reliable service, company upload."><img src="images/gallery/reliable.jpg" alt="Blankets on a load"></a><a href="images/gallery/truck.jpg" data-lightbox data-caption="Professional packaging, company upload."><img src="images/gallery/truck.jpg" alt="Truck and wrap"></a><a href="images/hero/carry.jpg" data-lightbox data-caption="How a careful fragile pack looks."><img src="images/hero/carry.jpg" alt="Fragile pack"></a></div></div>
+    </section>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo">
+    <button class="lightbox-close" type="button" aria-label="Close">×</button>
+    <button class="lightbox-nav prev" type="button" aria-label="Previous">‹</button>
+    <img alt="">
+    <button class="lightbox-nav next" type="button" aria-label="Next">›</button>
+    <p data-caption></p>
+  </div>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>Asap Movers LLC</h3>
+        <p>807 Tinton Ave, Apt 1<br>Bronx, NY 10456<br>Book online — no public phone listed</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="book.html">Book</a><br><a href="about.html">About</a><br><a href="gallery.html">Gallery</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>Sun 7 AM–11 PM · Mon–Thu &amp; Sat 5 AM–11 PM · Fri 5 AM–3 PM Eastern.</p>
+        
+      </div>
+    </div>
+    <div class="wrap legal"><span>© <span id="year">2026</span> Asap Movers LLC</span><span>Published rates only — nothing invented</span></div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

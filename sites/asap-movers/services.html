@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (!/\.[a-z0-9]+$/i.test(p) && p.slice(-1) !== "/") {
+        var b = document.createElement("base");
+        b.href = p + "/";
+        document.head.insertBefore(b, document.head.firstChild);
+      }
+    })();
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services &amp; rates | Asap Movers</title>
+  <meta name="description" content="HireAHelper 5.0 from 528 reviews. $130/hr for 2 movers, 2-hour min. 100 miles from the Bronx, including New Brunswick.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/theme.css">
+  
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/brand/logo.jpg" alt="Asap Movers mark">
+        <span class="brand-text"><strong>Asap Movers</strong><span>Bronx · 100-mile radius</span></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="book.html" class="book-tab">Book</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        
+        <div class="order-wrap">
+          <button class="btn" id="order-btn" aria-expanded="false" aria-haspopup="true">Contact</button>
+          <div class="order-menu" role="menu">
+            <a href="https://www.hireahelper.com/movers/bronx_ny/asap-movers-the-bronx/" target="_blank" rel="noopener"><strong>HireAHelper</strong><span>5.0 ★ from 528 verified jobs</span></a>
+          </div>
+        </div>
+        <a class="btn btn-solid" href="book.html">Book</a>
+        <button class="menu-toggle" aria-label="Pages" aria-expanded="false" aria-controls="primary-nav">Pages</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero" style="background-image: url('images/hero/carry.jpg')">
+      <div class="wrap"><span class="eyebrow">Services</span><h1>What we will actually do.</h1><p class="muted">Filter the list. Prices are the published two-mover rate unless marked as a quote.</p></div>
+    </section>
+    <section class="section">
+      <div class="wrap price-grid">
+        <div>
+          <span class="eyebrow">Published rate</span>
+          <h2>Two movers, $130 an hour, two-hour minimum.</h2>
+          <p class="muted">HireAHelper list price. Extra crew and a full pack are quoted after inventory.</p>
+          <ul class="rate-list"><li><span>2 movers, hourly</span><strong>$130/hr</strong></li><li><span>Minimum</span><strong>2 hours ($260)</strong></li><li><span>Same-day</span><strong>+20%</strong></li><li><span>Next-day</span><strong>Regular rate</strong></li><li><span>Unused time</span><strong>Not refunded</strong></li><li><span>Past the window</span><strong>Not guaranteed</strong></li><li><span>Dolly, straps, tools</span><strong>Included</strong></li></ul>
+        </div>
+        <div class="price-card">
+          <span class="eyebrow">Prep</span>
+          <h3>Before the crew arrives</h3>
+          <p class="muted">Tell them what you want moved. They say the confirmation call after booking is how details get locked.</p>
+          <p><a class="btn btn-dark" href="book.html">Estimate on the Book tab</a></p>
+        </div>
+      </div>
+    </section>
+    <section class="section section-paper">
+      <div class="wrap">
+        <div class="chips" role="toolbar" aria-label="Service filters">
+          <button class="chip" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="local" aria-pressed="false">Local</button>
+          <button class="chip" data-filter="labor" aria-pressed="false">Labor-only</button>
+          <button class="chip" data-filter="pack" aria-pressed="false">Packing</button>
+          <button class="chip" data-filter="long" aria-pressed="false">Long-distance</button>
+          <button class="chip" data-filter="office" aria-pressed="false">Office</button>
+        </div>
+        <div class="service-grid"><article class="service-item" data-category="local">
+            <h3>Apartment &amp; house</h3><span class="price">$130/hr</span><p>Bronx base, 100-mile radius including New Brunswick.</p>
+          </article><article class="service-item" data-category="labor">
+            <h3>POD / Relocube load</h3><span class="price">$130/hr</span><p>Recent 16-ft POD jobs.</p>
+          </article><article class="service-item" data-category="labor">
+            <h3>U-Haul load &amp; unload</h3><span class="price">$130/hr</span><p>You supply the truck.</p>
+          </article><article class="service-item" data-category="pack">
+            <h3>Packing</h3><span class="price">Quote</span><p>Blankets and wrap on the photos.</p>
+          </article><article class="service-item" data-category="local pack">
+            <h3>Walk-up specialty</h3><span class="price">$130/hr</span><p>5th-floor Manhattan walk-up in the reviews.</p>
+          </article><article class="service-item" data-category="office">
+            <h3>Office</h3><span class="price">Quote</span><p>Tri-state commercial labor.</p>
+          </article><article class="service-item" data-category="long">
+            <h3>Long-distance labor</h3><span class="price">Quote</span><p>They describe the work as tri-state. Trucking is a quote.</p>
+          </article><article class="service-item" data-category="labor local">
+            <h3>Same-day labor</h3><span class="price">+20%</span><p>Published same-day surcharge.</p>
+          </article></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>Asap Movers LLC</h3>
+        <p>807 Tinton Ave, Apt 1<br>Bronx, NY 10456<br>Book online — no public phone listed</p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="book.html">Book</a><br><a href="about.html">About</a><br><a href="gallery.html">Gallery</a><br><a href="contact.html">Contact</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>Sun 7 AM–11 PM · Mon–Thu &amp; Sat 5 AM–11 PM · Fri 5 AM–3 PM Eastern.</p>
+        
+      </div>
+    </div>
+    <div class="wrap legal"><span>© <span id="year">2026</span> Asap Movers LLC</span><span>Published rates only — nothing invented</span></div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
