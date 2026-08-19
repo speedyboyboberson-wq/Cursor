@@ -1,0 +1,1 @@
+window.MOVER = {"rate": 0, "sameDay": 1.0, "email": "", "phone": "+17329123655", "bookUrl": "", "hours": {"0": [0, 1440], "1": [0, 1440], "2": [0, 1440], "3": [0, 1440], "4": [0, 1440], "5": [0, 1440], "6": [0, 1440]}, "openText": "Call for today's jobs", "closedText": "No published hours \u2014 call", "quoteOnly": true};
