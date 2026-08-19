@@ -503,11 +503,24 @@ h1, h2, h3 {
 .gallery-grid a:nth-child(6) { grid-column: span 2; aspect-ratio: 2 / 1; }
 
 .page-hero {
+  position: relative;
   padding: 88px 0 40px;
-  background:
-    linear-gradient(180deg, rgba(11,11,13,0.62), var(--panel)),
-    var(--page-hero) center/cover no-repeat;
   color: var(--white);
+  background-color: var(--ink);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(11,11,13,0.62), var(--panel));
+  pointer-events: none;
+}
+.page-hero > .wrap {
+  position: relative;
+  z-index: 1;
 }
 .page-hero h1 { color: var(--white); font-size: clamp(40px, 6vw, 64px); }
 .page-hero .muted { color: #ece7db; }
