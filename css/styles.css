@@ -569,4 +569,6 @@ h1, h2, h3 {
   .gallery-grid a:nth-child(1),
   .gallery-grid a:nth-child(6) { grid-column: auto; aspect-ratio: 1; }
   .brand-text span { display: none; }
+  .header-actions .btn-call,
+  .header-actions > a.btn-solid { display: none; }
 }
