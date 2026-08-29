@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (!/\.[a-z0-9]+$/i.test(p) && p.slice(-1) !== "/") {
+        var b = document.createElement("base");
+        b.href = p + "/";
+        document.head.insertBefore(b, document.head.firstChild);
+      }
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get a quote | Alvarado Concrete</title>
+  <meta name="description" content="Request a concrete quote from Juan at Alvarado Concrete LLC. Call (612) 644-0335.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/brand/logo.png" alt="Alvarado Concrete mark">
+        <span class="brand-text"><strong>Alvarado Concrete</strong><span>Twin Cities flatwork</span></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="quote.html" class="quote-tab" aria-current="page">Quote</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Hours</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-call" href="tel:+16126440335">Call</a>
+        <div class="order-wrap">
+          <button class="btn" id="order-btn" aria-expanded="false" aria-haspopup="true">Contact</button>
+          <div class="order-menu" role="menu">
+            <a href="tel:+16126440335"><strong>Call</strong><span>(612) 644-0335</span></a>
+            <a href="mailto:juan@alvaradoconcrete.com"><strong>Email Juan</strong><span>juan@alvaradoconcrete.com</span></a>
+            <a href="https://share.google/SN6Ftez2Ug2qkTl0A" target="_blank" rel="noopener"><strong>Google listing</strong><span>The share link you sent</span></a>
+            <a href="https://dli.mn.gov/license-and-registration-lookup" target="_blank" rel="noopener"><strong>MN DLI lookup</strong><span>Verify BC808133 yourself</span></a>
+            <a href="https://www.alvaradoconcrete.com/" target="_blank" rel="noopener"><strong>Existing site</strong><span>alvaradoconcrete.com</span></a>
+          </div>
+        </div>
+        <a class="btn btn-solid" href="quote.html">Quote</a>
+        <button class="menu-toggle" aria-label="Pages" aria-expanded="false" aria-controls="primary-nav">Pages</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero" style="background-image: url('images/hero/pour.jpg')">
+      <div class="wrap">
+        <span class="eyebrow">Quote tab</span>
+        <h1>Ask for a number. We will not invent one.</h1>
+        <p class="muted">Name, phone, and the job-site address are required. Native browser popups are off so the note under the button can tell you exactly what is missing.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap book-shell">
+        <aside class="estimate-card" aria-live="polite">
+          <span class="eyebrow">Live estimate</span>
+          <div class="figure" id="estimate-total">Quote</div>
+          <p class="muted" id="estimate-detail">No public hourly or square-foot rate. Juan prices the pour after a look at the site.</p>
+          <ul class="rate-list">
+            <li><span>Phone</span><strong>(612) 644-0335</strong></li>
+            <li><span>Email</span><strong>juan@…</strong></li>
+            <li><span>Base</span><strong>Columbia Heights</strong></li>
+            <li><span>Area</span><strong>Twin Cities</strong></li>
+          </ul>
+          <p class="notice">Verify MN license BC808133 on DLI iMS before you pay a deposit. BuildZoom last flagged it inactive in July 2026.</p>
+        </aside>
+        <div class="book-panel">
+          <h2>Job details</h2>
+          <p class="muted">Submitting opens mail to juan@alvaradoconcrete.com with this filled in.</p>
+          <form class="form" id="quote-form" novalidate>
+            <div class="form-row">
+              <label>Name<input type="text" name="name" autocomplete="name"></label>
+              <label>Phone<input type="tel" name="phone" autocomplete="tel"></label>
+            </div>
+            <label>Email<input type="email" name="email" autocomplete="email"></label>
+            <label>Job-site address<input type="text" name="site" placeholder="Street, city" autocomplete="street-address"></label>
+            <div class="form-row">
+              <label>Project
+                <select name="project">
+                  <option>Driveway</option>
+                  <option selected>Patio</option>
+                  <option>Sidewalk</option>
+                  <option>Steps / landing</option>
+                  <option>Repair / replacement</option>
+                  <option>Stamped / decorative</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label>Preferred timing<input type="text" name="when" placeholder="This fall / next spring"></label>
+            </div>
+            <label>Size, stamp, color, demo
+              <input type="text" name="size" placeholder="e.g. 20×24 patio, broom finish, tear-out old slab">
+            </label>
+            <label>Notes
+              <textarea name="message" rows="4" placeholder="Access, slope, HOA, photos you will attach in email…"></textarea>
+            </label>
+            <button class="btn btn-solid" type="submit">Send request to Juan</button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>Alvarado Concrete LLC</h3>
+        <p>3821 Reservoir Blvd<br>Columbia Heights, MN 55421<br><a href="tel:+16126440335">(612) 644-0335</a><br><a href="mailto:juan@alvaradoconcrete.com">juan@alvaradoconcrete.com</a></p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="quote.html">Quote</a><br><a href="about.html">About</a><br><a href="gallery.html">Gallery</a><br><a href="contact.html">Hours</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>No published office hours. Pour days follow weather. Call for a site visit.</p>
+      </div>
+    </div>
+    <div class="wrap legal"><span>© <span id="year">2026</span> Alvarado Concrete LLC</span><span>MN license BC808133 — verify on DLI before you hire</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#141614"/>
+  <polygon points="32,48 18,38 46,38" fill="#e06a32"/>
+  <text x="32" y="30" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="16" fill="#fbf8f2">AC</text>
+</svg>
