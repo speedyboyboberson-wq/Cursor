@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <script>
+    (function () {
+      var p = location.pathname;
+      if (!/\.[a-z0-9]+$/i.test(p) && p.slice(-1) !== "/") {
+        var b = document.createElement("base");
+        b.href = p + "/";
+        document.head.insertBefore(b, document.head.firstChild);
+      }
+    })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hours &amp; location | Alvarado Concrete</title>
+  <meta name="description" content="3821 Reservoir Blvd, Columbia Heights, MN 55421. Call (612) 644-0335.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/brand/logo.png" alt="Alvarado Concrete mark">
+        <span class="brand-text"><strong>Alvarado Concrete</strong><span>Twin Cities flatwork</span></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="quote.html" class="quote-tab">Quote</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" aria-current="page">Hours</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-call" href="tel:+16126440335">Call</a>
+        <div class="order-wrap">
+          <button class="btn" id="order-btn" aria-expanded="false" aria-haspopup="true">Contact</button>
+          <div class="order-menu" role="menu">
+            <a href="tel:+16126440335"><strong>Call</strong><span>(612) 644-0335</span></a>
+            <a href="mailto:juan@alvaradoconcrete.com"><strong>Email Juan</strong><span>juan@alvaradoconcrete.com</span></a>
+            <a href="https://share.google/SN6Ftez2Ug2qkTl0A" target="_blank" rel="noopener"><strong>Google listing</strong><span>The share link you sent</span></a>
+            <a href="https://dli.mn.gov/license-and-registration-lookup" target="_blank" rel="noopener"><strong>MN DLI lookup</strong><span>Verify BC808133 yourself</span></a>
+            <a href="https://www.alvaradoconcrete.com/" target="_blank" rel="noopener"><strong>Existing site</strong><span>alvaradoconcrete.com</span></a>
+          </div>
+        </div>
+        <a class="btn btn-solid" href="quote.html">Quote</a>
+        <button class="menu-toggle" aria-label="Pages" aria-expanded="false" aria-controls="primary-nav">Pages</button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero" id="contact" style="background-image: url('images/hero/yard.jpg')">
+      <div class="wrap">
+        <span class="eyebrow">Hours &amp; location</span>
+        <h1>Columbia Heights base. Twin Cities pours.</h1>
+        <p class="muted">3821 Reservoir Blvd, Columbia Heights, MN 55421</p>
+        <div class="status-pill light" data-open-status style="margin-top:18px"><i></i><span data-open-label>Checking hours…</span></div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow">The yard</span>
+          <h2>Call, email, or use the Google listing. No DoorDash.</h2>
+          <p><a href="tel:+16126440335">Call</a> · <a href="mailto:juan@alvaradoconcrete.com">Email</a> · <a href="https://share.google/SN6Ftez2Ug2qkTl0A" target="_blank" rel="noopener">Google</a> · <a href="https://dli.mn.gov/license-and-registration-lookup" target="_blank" rel="noopener">MN DLI</a></p>
+          <table class="hours-table"><tbody>
+            <tr data-day="0"><th>Sunday</th><td>By appointment / weather</td></tr>
+            <tr data-day="1"><th>Monday</th><td>By appointment / weather</td></tr>
+            <tr data-day="2"><th>Tuesday</th><td>By appointment / weather</td></tr>
+            <tr data-day="3"><th>Wednesday</th><td>By appointment / weather</td></tr>
+            <tr data-day="4"><th>Thursday</th><td>By appointment / weather</td></tr>
+            <tr data-day="5"><th>Friday</th><td>By appointment / weather</td></tr>
+            <tr data-day="6"><th>Saturday</th><td>By appointment / weather</td></tr>
+          </tbody></table>
+          <p class="notice">Neither the official site nor the Google share published clock hours we could copy. America/Chicago. Call (612) 644-0335.</p>
+          <p><a class="btn btn-dark" href="quote.html">Get a quote</a></p>
+        </div>
+        <div class="map-embed">
+          <iframe title="Map of 3821 Reservoir Blvd, Columbia Heights, MN 55421" src="https://maps.google.com/maps?q=3821+Reservoir+Blvd+Columbia+Heights+MN+55421&amp;output=embed" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <h3>Alvarado Concrete LLC</h3>
+        <p>3821 Reservoir Blvd<br>Columbia Heights, MN 55421<br><a href="tel:+16126440335">(612) 644-0335</a><br><a href="mailto:juan@alvaradoconcrete.com">juan@alvaradoconcrete.com</a></p>
+      </div>
+      <div>
+        <h3>Pages</h3>
+        <p><a href="index.html">Home</a><br><a href="services.html">Services</a><br><a href="quote.html">Quote</a><br><a href="about.html">About</a><br><a href="gallery.html">Gallery</a><br><a href="contact.html">Hours</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p>No published office hours. Pour days follow weather. Call for a site visit.</p>
+      </div>
+    </div>
+    <div class="wrap legal"><span>© <span id="year">2026</span> Alvarado Concrete LLC</span><span>MN license BC808133 — verify on DLI before you hire</span></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
